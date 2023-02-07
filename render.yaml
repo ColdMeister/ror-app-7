@@ -1,7 +1,7 @@
 env: ruby
-    buildCommand: "./bin/render-build.sh"
-    startCommand: "bundle exec puma -C config/puma.rb"
-    autoDeploy: false
-    envVars:
-      - key: DATABASE_URL
-        fromDatabase:
+  buildCommand: "./bin/render-build.sh"
+  startCommand: "bundle exec puma -C config/puma.rb"
+  autoDeploy: false
+  envVars:
+    - key: DATABASE_URL
+      fromDatabase:
